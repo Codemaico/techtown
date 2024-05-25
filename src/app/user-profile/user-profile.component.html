@@ -1,0 +1,190 @@
+<br>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <form [formGroup]="userProfileForm" (ngSubmit)="upDateProfile()" >
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      formControlName="mobNumber"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Enter Your Age</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="age"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Enter Your DOB</label>
+                    <input type="date" class="form-control" formControlName="dob" />
+                  </div>
+                  <!--------New Row-->
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="someone@gmail.com"
+                        formControlName="email"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Enter your password"
+                        formControlName="password"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="124 Street Juba, South Sudan"
+                        formControlName="addLine1"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Apartment, Floor"
+                        formControlName="addLine2"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your city"
+                        formControlName="city"
+                      />
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">State</label>
+                      <select
+                        id="inputState"
+                        class="form-control"
+                        formControlName="state"
+                      >
+                        <option selected>Choose...</option>
+                        <option>Juba</option>
+                        <option>Kampala</option>
+                        <option>Kigali</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputZip">Zip Code</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Enter your Zip Code"
+                        formControlName="zipCode"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Language</label>
+                    <select
+                      multiple
+                      class="form-control"
+                      formControlName="languages"
+                    >
+                      <option>English</option>
+                      <option>French</option>
+                      <option>Arabic</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Gender</label><br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        formControlName="gender"
+                        value="Male"
+                      />
+                      <label for="inlineRadio1" class="form-check-label"
+                        >Male</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        formControlName="gender"
+                        value="Female"
+                      />
+                      <label for="inlineRadio2" class="form-check-label"
+                        >Female</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        formControlName="gender"
+                        value="Others"
+                      />
+                      <label for="others" class="form-check-inline">Others</label>
+                    </div>
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1"
+                      >Something about you</label
+                    >
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      formControlName="aboutYou"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload Your Photo</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      formControlName="upLoadPhoto"
+                    />
+                  </div>
+    
+                  
+                  <div class="form-group">
+                    <label for="roleSelect">What do you want to be ?</label>
+                    <select class="form-control" formControlName="role">
+                      <option value="admin">Admin</option>
+                      <option value="seller">Seller</option>
+                      <option value="buyer">Buyer</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary">Update your profile</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </div>
+</div>
+

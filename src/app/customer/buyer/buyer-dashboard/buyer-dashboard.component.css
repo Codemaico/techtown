@@ -1,0 +1,21 @@
+.product{
+    margin-top: 1rem;
+    .card{
+        img{
+           height: 15rem;
+           padding: 0.7rem; 
+        }
+        .card-body{
+            .product-desc{
+                height: 9rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .card-title{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
