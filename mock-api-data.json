@@ -1,85 +1,6 @@
 {
-  "user": [
-    {},
-    {
-      "id": "bf65",
-      "name": "Michael Tekie",
-      "mobNumber": "0910133802",
-      "age": 29,
-      "dob": "1994-05-19",
-      "email": "devwithmiki@gmail.com",
-      "password": "123456",
-      "address": {
-        "id": 0,
-        "addLine1": "konyo konyo street",
-        "addLine2": "asmara",
-        "city": "Juba",
-        "state": "Juba",
-        "zipCode": 12345,
-        "name": "Michael Tekie"
-      },
-      "languages": [
-        "English"
-      ],
-      "gender": "Male",
-      "aboutYou": "dfasf",
-      "upLoadPhoto": "C:\\fakepath\\muller.jpg",
-      "agreeTC": true,
-      "role": "admin"
-    },
-    {
-      "id": "89fb",
-      "name": "Michael Tekie",
-      "mobNumber": "0910133802",
-      "age": 29,
-      "dob": "1994-05-19",
-      "email": "buyer@example.com",
-      "password": "123456",
-      "address": {
-        "id": 0,
-        "addLine1": "konyo konyo street",
-        "addLine2": "asmara",
-        "city": "Juba",
-        "state": "Juba",
-        "zipCode": 12345,
-        "name": "Michael Tekie"
-      },
-      "languages": [
-        "English"
-      ],
-      "gender": "Male",
-      "aboutYou": "lkjashfkjdf",
-      "upLoadPhoto": "C:\\fakepath\\muller.jpg",
-      "agreeTC": true,
-      "role": "buyer"
-    },
-    {
-      "id": "269c",
-      "name": "Michael Tekie",
-      "mobNumber": "0910133802",
-      "age": 29,
-      "dob": "1994-05-19",
-      "email": "devwithmiki@gmail.com",
-      "password": "1234567",
-      "address": {
-        "id": 0,
-        "addLine1": "konyo konyo street",
-        "addLine2": "asmara",
-        "city": "Juba",
-        "state": "Juba",
-        "zipCode": 12345,
-        "name": "Michael Tekie"
-      },
-      "languages": [
-        "French"
-      ],
-      "gender": "Male",
-      "aboutYou": "buyer",
-      "upLoadPhoto": "C:\\fakepath\\muller.jpg",
-      "agreeTC": true,
-      "role": "buyer"
-    }
-  ],
+  "user": [],
+  
   "products": [
     {
       "id": 1,
@@ -143,15 +64,7 @@
       "contact": "0980684621",
       "dateTime": "07/04/2024"
     },
-    {
-      "id": "4e16"
-    },
-    {
-      "id": "fd31"
-    },
-    {
-      "id": "efb5"
-    },
+    
     {
       "id": "0",
       "userId": null,

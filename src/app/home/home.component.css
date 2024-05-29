@@ -1,17 +1,57 @@
-.my-primary{
-    color: lightYellow ;
-    background-color: red;
-  }
-  
-  .my-primary:focus, .my-primary:hover{
-    color: yellow ;
-    background-color: darkRed;
-  }
-  
-  a.navbar-brand {
-    color: lightYellow ;
-  }
-  
-  .navbar-brand:hover{
-    color: yellow;
-  }
+body{
+    background: #0259f0;
+    height: 70vh;
+    font-family: poppins;
+}
+
+#container{
+    margin-top: 15%;
+}
+
+#card{
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+#card .box{
+    position: absolute;
+    color: #262626;
+    width: 100%;
+    height: 100%;
+    box-shadow:0 15px 35px rgba(0,0, 0,0.1) ;
+    border-radius: 15px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+/*.card .box.front{
+    background-image: ;
+}*/
+
+#card .box.front,
+#card .box.back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card .box.front img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #262626;
+    margin-bottom: 25px;
+}
+
+#card:hover .box.front{
+    transform: rotateY(180deg);
+}

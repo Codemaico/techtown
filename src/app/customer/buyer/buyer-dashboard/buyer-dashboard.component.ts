@@ -35,9 +35,9 @@ export class BuyerDashboardComponent implements OnInit {
 }
 
 
-  buyProduct(id:any){
+  buyProduct(product_id:any){
     this.show_checkout = true;
-    this.customerService.quickBuyProduct(id);
+    this.customerService.quickBuyProduct(product_id);
     this.router.navigateByUrl('/checkout');
   }
 
