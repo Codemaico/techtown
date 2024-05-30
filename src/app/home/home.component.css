@@ -55,3 +55,36 @@ body{
 #card:hover .box.front{
     transform: rotateY(180deg);
 }
+
+.box.front h2{
+    font-family: bebas neue;
+}
+
+.box.front h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.socials i{
+    margin: 0 15px;
+}
+
+#card .box.back{
+    position: absolute;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    padding: 20px 30px ;
+    text-align: center;
+    user-select: none;
+}
+
+#card .box.back .fa-quote-left{
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    font-size: 3.2rem;
+}
+
+#card:hover .box.back{
+    transform: rotateY(360deg);
+}
