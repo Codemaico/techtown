@@ -1,9 +1,3 @@
-body{
-    background: #0259f0;
-    height: 70vh;
-    font-family: poppins;
-}
-
 #container{
     margin-top: 15%;
 }
@@ -12,17 +6,16 @@ body{
     width: 100%;
     height: 300px;
     transform-style: preserve-3d;
-    perspective: 500px;
-    border: none;
+    perspective: none;
     background-color: inherit;
 }
 
 #card .box{
     position: absolute;
-    color: #262626;
+    color: #fff;
     width: 100%;
     height: 100%;
-    box-shadow:0 15px 35px rgba(0,0, 0,0.1) ;
+    box-shadow: 0 15px rgba(0,0,0,0.1);
     border-radius: 15px;
     background: #fff;
     transform-style: preserve-3d;
@@ -30,9 +23,10 @@ body{
     backface-visibility: hidden;
 }
 
-/*.card .box.front{
-    background-image: ;
-}*/
+#card .box.front{
+    background-color: #0259f0;
+    background-repeat: no-repeat;
+}
 
 #card .box.front,
 #card .box.back{
@@ -48,7 +42,7 @@ body{
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #262626;
+    border: 5px solid #fff;
     margin-bottom: 25px;
 }
 
@@ -57,7 +51,7 @@ body{
 }
 
 .box.front h2{
-    font-family: bebas neue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .box.front h4{
@@ -71,18 +65,22 @@ body{
 
 #card .box.back{
     position: absolute;
-    background-color: #fff;
+    background: #0259f0;
     transform: rotateY(180deg);
-    padding: 20px 30px ;
+    padding: 20px 30px;
     text-align: center;
     user-select: none;
 }
 
 #card .box.back .fa-quote-left{
     position: absolute;
-    top: 25px;
-    left: 180px;
-    font-size: 3.2rem;
+    top: 10px;
+    left: 80px;
+    font-size: 3rem;
+}
+
+#card .box.back p{
+    font-size: 14px;
 }
 
 #card:hover .box.back{
