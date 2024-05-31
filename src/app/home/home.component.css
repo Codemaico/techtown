@@ -24,7 +24,7 @@
 }
 
 #card .box.front{
-    background-color: #0259f0;
+    background-color: #5a585b;
     background-repeat: no-repeat;
 }
 
@@ -65,7 +65,7 @@
 
 #card .box.back{
     position: absolute;
-    background: #0259f0;
+    background: #5a585b;
     transform: rotateY(180deg);
     padding: 20px 30px;
     text-align: center;

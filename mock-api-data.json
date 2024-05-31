@@ -79,6 +79,32 @@
       "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.47.07.jpeg",
       "agreeTC": true,
       "role": "seller"
+    },
+    {
+      "id": "45a9",
+      "name": "Michael Tekie",
+      "mobNumber": "0910133802",
+      "age": 45,
+      "dob": "1994-05-19",
+      "email": "devwithmiki@gmail.com",
+      "password": "1234567",
+      "address": {
+        "id": 0,
+        "addLine1": "konyo konyo ",
+        "addLine2": "asmara",
+        "city": "Juba",
+        "state": "Juba",
+        "zipCode": 12345,
+        "name": "Michael Tekie"
+      },
+      "languages": [
+        "English"
+      ],
+      "gender": "Male",
+      "aboutYou": "ASDFASD",
+      "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.58.12_8eafb4d8.jpg",
+      "agreeTC": true,
+      "role": "seller"
     }
   ],
   "products": [
@@ -114,6 +140,15 @@
       "name": "dsafdfa",
       "uploadPhoto": "assets/images/DSC_0008.JPG",
       "productDescription": "dfasdf",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "published"
+    },
+    {
+      "id": 20,
+      "name": "GRGR",
+      "uploadPhoto": "assests/images/DSC_0008JPG",
+      "productDescription": "ASDFASD",
       "mrp": "1000",
       "dp": "459",
       "status": "published"
