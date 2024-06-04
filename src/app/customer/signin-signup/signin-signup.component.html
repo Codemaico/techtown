@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3" *ngIf="regForm">
-        <h3>Registration - Reactive Form with validation</h3>
+        <h3>Registration Form</h3>
         <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp()">
           <div class="form-group">
             <label>Name</label>
@@ -200,7 +200,7 @@
         </p>
       </div>
       <div class="col-md-6 offset-md-3" *ngIf="!regForm">
-        <h3>Registration - Template driven Form with validation</h3>
+        <h3>Sign In</h3>
         <form
           name="form"
           #tf="ngForm"
@@ -236,7 +236,7 @@
           </div>
         </form>
         <p class="sim-pointer" routerLink="/sign-up">
-          Don't have an account Click here to Register
+          Don't have an account <a>Click here to Register</a> 
         </p>
       </div>
     </div>

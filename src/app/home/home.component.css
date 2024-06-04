@@ -1,5 +1,6 @@
 #container{
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #card{
@@ -24,7 +25,7 @@
 }
 
 #card .box.front{
-    background-color: #5a585b;
+    background-color: #212529;
     background-repeat: no-repeat;
 }
 
@@ -65,7 +66,7 @@
 
 #card .box.back{
     position: absolute;
-    background: #5a585b;
+    background: #212529;
     transform: rotateY(180deg);
     padding: 20px 30px;
     text-align: center;
@@ -85,4 +86,26 @@
 
 #card:hover .box.back{
     transform: rotateY(360deg);
+}
+
+.container.hero-section {
+    
+    margin-top: 100px; /* Adjust this value as needed */
+    margin-bottom: 80px;
+}
+.heads{
+    
+    margin-top: 50px;
+
+}
+
+.lead{
+    background: #c2c1c3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.card:hover{
+    transform: scale(1.05);
 }

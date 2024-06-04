@@ -1,0 +1,85 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+    background: linear-gradient(to bottom, #e0f2ff 0%, #c7e0f4 100%);  /* Light blue gradient */
+  }
+  
+  .form {  /* Optional: Add a subtle background to the form */
+    background-color: #f5f5f5;
+    border-radius: 0.3rem;
+    padding: 1rem;
+  }
+  
+  .form-group.has-error .form-control {
+    border-color: #ff0000; /* Red border for error messages */
+    background-color: #ffc1c1; /* Light red background for error messages */
+  }
+  
+  .form-group.has-success .form-control {
+    border-color: #28a745; /* Green border for success messages (optional) */
+    background-color: #d0f0c0; /* Light green background for success messages (optional) */
+  }
+  
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  .col-md-6 {
+    padding: 0.1rem; /* Add some padding for better separation */
+  }
+
+ h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .form-group label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .col-md-6 {
+      width: 100%;  /* Make form columns stack on narrow screens */
+    }
+  }
+      

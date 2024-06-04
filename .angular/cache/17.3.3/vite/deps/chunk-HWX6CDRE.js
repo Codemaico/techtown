@@ -6,8 +6,9 @@ import {
   __spreadProps,
   __spreadValues,
   first,
+  init_tslib_es6,
   map
-} from "./chunk-SXIXOCJ4.js";
+} from "./chunk-PZUSBCK4.js";
 
 // node_modules/@angular/core/fesm2022/primitives/signals.mjs
 function defaultEquals(a, b) {
@@ -372,6 +373,9 @@ var WATCH_NODE = (() => {
     cleanupFn: NOOP_CLEANUP_FN
   });
 })();
+
+// node_modules/rxjs/dist/esm5/internal/operators/race.js
+init_tslib_es6();
 
 // node_modules/@angular/core/fesm2022/core.mjs
 var ERROR_DETAILS_PAGE_BASE_URL = "https://angular.io/errors";
@@ -21597,4 +21601,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-4FFVUQGS.js.map
+//# sourceMappingURL=chunk-HWX6CDRE.js.map

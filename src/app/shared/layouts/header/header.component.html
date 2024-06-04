@@ -27,9 +27,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">About Us</a>
-        </li>
+        
         <li class="nav-item" *ngIf="user_role == 'buyer'">
           <a class="nav-link" routerLink="/buyer-dashboard">Book</a>
         </li>
@@ -63,7 +61,7 @@
           <a class="nav-link" routerLink="/sign-in">Sign In</a>
         </li>
         <li class="navitem">
-          <a class="nav-link" routerLink="/sign-up">Sign Up</a>
+          <a class="nav-link" routerLink="/sign-up">Register</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="logged_in">

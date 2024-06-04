@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { event } from 'jquery';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { Amplify } from 'aws-amplify';
+import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
 
 
@@ -15,7 +17,7 @@ import { isPlatformBrowser } from '@angular/common';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule,RouterOutlet, HeaderComponent,FooterComponent]
+    imports: [CommonModule,RouterOutlet, HeaderComponent,FooterComponent,AmplifyAuthenticatorModule]
 })
 export class AppComponent {
   screenHeight: any;

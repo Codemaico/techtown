@@ -11,6 +11,18 @@ import { Router, RouterLink } from '@angular/router';
 import { User } from '../../core/Model/object_model';
 import { LoginSignupService } from '../../shared/services/login-signup.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Amplify } from 'aws-amplify';
+import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
+
+
+Amplify.configure({
+  Auth: {
+    Cognito:{
+      userPoolId: 'us-east-1_JYVPbsTOO',
+      userPoolClientId: '407mt8ve12lkmr5vl85hpaba0g'
+    }
+  }
+});
 
 @Component({
   selector: 'app-signin-signup',
@@ -21,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    AmplifyAuthenticatorModule
   ],
   templateUrl: './signin-signup.component.html',
   styleUrl: './signin-signup.component.css',
