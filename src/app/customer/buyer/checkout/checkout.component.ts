@@ -32,7 +32,6 @@ export class CheckoutComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-<<<<<<< HEAD
     this.customerService.currentProduct.subscribe(
       (product) => (this.single_product_id = product)
     );
@@ -42,43 +41,20 @@ export class CheckoutComponent implements OnInit {
   }
 
   productDetail(single_product_id: any) {
-=======
-    this.customerService.currentProduct.subscribe(product => {
-      this.single_product_id = product;
-      if (this.single_product_id) {
-        this.productDetail(this.single_product_id);
-      }
-    });  
-    this.user_id = sessionStorage.getItem('user_session_id');
-    if (this.user_id) {
-      this.userAddress(this.user_id);
-    }
-  }
-  
-  productDetail(single_product_id: any) {
-    // Check if single_product_id is defined before making the API request
-    if (!single_product_id) {
-      console.log("Single product ID is undefined.");
-      return;
-    }
-    
->>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
     this.customerService.individualProduct(single_product_id).subscribe({
       next: (data: any) => {
         console.log("Received product data:", data);
         this.individual_product = data;
-<<<<<<< HEAD
+
         console.log("My single product", this.individual_product);
-=======
+
         console.log("Individual Product Data:", this.individual_product); // Log the individual_product
->>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
       },
       error: (error) => {
         console.error("Product detail error:", error);
       },
     });
   }
-  
 
   userAddress(user_id: any) {
     this.customerService.userDetail(user_id).subscribe({
@@ -106,7 +82,7 @@ export class CheckoutComponent implements OnInit {
         dp: this.individual_product.dp,
         status: this.individual_product.status,
       },
-<<<<<<< HEAD
+
       deliveryAddress: {
         id: 0,
         name: this.user_address.name,
@@ -115,16 +91,6 @@ export class CheckoutComponent implements OnInit {
         city: this.user_address.city,
         state: this.user_address.state,
         zipCode: this.user_address.zipCode,
-=======
-      deliveryAddress:{
-        id:0,
-        
-        addLine1:this.user_address.addLine1,
-        addLine2:this.user_address.addLine2,
-        city:this.user_address.city,
-        state:this.user_address.state,
-        zipCode:this.user_address.zipCode
->>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
       },
       contact: this.user_contact_no,
       dateTime: new Date().toLocaleDateString(),
