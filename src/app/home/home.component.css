@@ -109,3 +109,30 @@
 .card:hover{
     transform: scale(1.05);
 }
+
+.btn-group .btn-primary {
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.btn-primary{
+    background:#212529;
+    border-color: #212529;
+}
+
+.text-body-secondary{
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    background: #99cc00;
+    border-radius: 10px;
+    
+}
+
+.btn-primary:hover{
+    background:#99cc00;
+    border-color: #99cc00;
+    color: #212529;
+}

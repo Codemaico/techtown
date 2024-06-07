@@ -1,5 +1,157 @@
 {
+<<<<<<< HEAD
   "user": [],
   "products": [],
   "orders": []
 }
+=======
+  "user": [
+    {
+      "id": "4b54",
+      "name": "Michael Tekie",
+      "mobNumber": "0910133802",
+      "age": 30,
+      "dob": "1994-05-19",
+      "email": "devwithmiki@gmail.com",
+      "password": "123456",
+      "address": {
+        "id": 0,
+        "addLine1": "konyo konyo street",
+        "addLine2": "asmara",
+        "city": "Juba",
+        "state": "Juba",
+        "zipCode": 12345,
+        "name": "Michael Tekie"
+      },
+      "languages": [
+        "English"
+      ],
+      "gender": "Male",
+      "aboutYou": "admin",
+      "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.47.07.jpeg",
+      "agreeTC": true,
+      "role": "admin"
+    },
+    {
+      "id": "06a3",
+      "name": "Michael Tekie",
+      "mobNumber": "0910133802",
+      "age": 30,
+      "dob": "1994-05-19",
+      "email": "buyer@example.com",
+      "password": "123456",
+      "address": {
+        "id": 0,
+        "addLine1": "konyo konyo street",
+        "addLine2": "asmara",
+        "city": "Juba",
+        "state": "Kampala",
+        "zipCode": 12345,
+        "name": "Michael Tekie"
+      },
+      "languages": [
+        "English"
+      ],
+      "gender": "Male",
+      "aboutYou": "buyer",
+      "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.47.07.jpeg",
+      "agreeTC": true,
+      "role": "buyer"
+    },
+    {
+      "id": "ad80",
+      "name": "Michael Tekie",
+      "mobNumber": "0910133802",
+      "age": 30,
+      "dob": "1994-05-19",
+      "email": "seller@example.com",
+      "password": "123456",
+      "address": {
+        "id": 0,
+        "addLine1": "konyo konyo street",
+        "addLine2": "asmara",
+        "city": "Juba",
+        "state": "Juba",
+        "zipCode": 12345,
+        "name": "Michael Tekie"
+      },
+      "languages": [
+        "English"
+      ],
+      "gender": "Male",
+      "aboutYou": "seller",
+      "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.53.11.jpeg",
+      "agreeTC": true,
+      "role": "seller"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "Guest House",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "published"
+    },
+    {
+      "id": "2",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "dcadsfa",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "published"
+    },
+    {
+      "id": "3",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/JUNIOR SUITE-1.JPG",
+      "productDescription": "sadfdsa",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "draft"
+    },
+    {
+      "id": "4",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "Guest House",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "published"
+    },
+    {
+      "id": "5",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "Guest House",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "draft"
+    },
+    {
+      "id": "6",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "Guest House",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "inactive"
+    },
+    {
+      "id": "7",
+      "name": "Guest House",
+      "uploadPhoto": "assets/images/DSC_0008.JPG",
+      "productDescription": "Guest House",
+      "mrp": "1000",
+      "dp": "459",
+      "status": "inactive"
+    }
+  ],
+  "orders": [
+    
+  ]
+}
+>>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1

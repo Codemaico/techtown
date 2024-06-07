@@ -10,6 +10,7 @@
 </nav>
 
 <div class="row">
+<<<<<<< HEAD
   <div class="col-md-8">
     <div class="card">
       <div class="card-header">Product detail</div>
@@ -38,9 +39,34 @@
               >
             </p>
           </div>
+=======
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                Product detail
+            </div>
+            <div class="card-body product-detail" *ngIf="individual_product">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{individual_product.uploadPhoto}}"
+                        class="card-img-top"  >
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="text-bold card-title">{{individual_product.name}}</h4><br>
+                        <p class="card-text product-desc">{{individual_product.productDescription}}</p>
+                        <p><span class="float-left"><strong>MRP:</strong><del>{{individual_product.mrp}}</del></span>&nbsp;&nbsp;
+                        <span class="float-right"><strong>DP:</strong>{{individual_product.dp}}</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+           
+>>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   </div>
   <div class="col-md-4">
     <div class="card">
@@ -64,6 +90,27 @@
           <span routerLink="/my-profile" class="text-info sim-pointer"
             >My profile</span
           >
+=======
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Address Detail
+            </div>
+            <div class="card-body address-detail" *ngIf="user_address">
+  <h5 class="card-title text-bold">Id: {{ user_address.id }}</h5>
+  <p class="card-text">{{ user_address.addLine1 }}, {{ user_address.addLine2 }}</p>
+  <p class="card-text">{{ user_address.city }}, {{ user_address.state }}</p>
+  <p class="card-text">Postal Code: {{ user_address.zipCode }}</p>
+  <p class="card-text">Contact Number: {{ user_contact_no }}</p>
+                <a (click)="placeOrder()" class="btn btn-primary">Book Here</a>
+                <div class="alert alert-info" role="alert">
+                    <strong>Note: </strong>
+                    We are not responsible for any misunderstanding of your order, you need to check the availability of your order
+                    before placing your order. Make sure to contact us for smooth processing of your order.
+                    <span routerLink="/my-profile" class="text-info sim-pointer">My profile</span>
+                </div>
+            </div>
+>>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
         </div>
       </div>
     </div>

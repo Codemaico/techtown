@@ -23,8 +23,13 @@ export class CustomerService {
     return this.single_product_id.next(product_id);
   }
 
+<<<<<<< HEAD
   individualProduct(product_id: any) {
     return this.apiService.get(this.product_url + product_id);
+=======
+  individualProduct(product_id:any){
+    return this.apiService.get(this.product_url+product_id);
+>>>>>>> 9e03fb8cdd860c19dc473781f22de11a2f7fe6f1
   }
 
   userDetail(product_id: any) {

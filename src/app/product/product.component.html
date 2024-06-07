@@ -71,7 +71,7 @@ arial-label="addEditUserTitle" aria-hidden="true">
                     <form [formGroup]="addEditProductForm">
                       <div class="form-group">
                         <label for="productName">Product ID</label>
-                        <input type="number" class="form-control" formControlName="id">
+                        <input type="text" class="form-control" formControlName="id">
                     </div>
                         <div class="form-group">
                             <label for="productName">Product Name</label>
@@ -106,7 +106,7 @@ arial-label="addEditUserTitle" aria-hidden="true">
                   </div>
                   <div class="form-group">
                     <button class="btn btn-primary" (click)="addNewProduct()" *ngIf="add_product">Add Product</button>
-                    <button class="btn btn-warning" (click)="updateProduct()" *ngIf="edit_product">Update Product</button>
+                    <button class="btn btn-primary" (click)="updateProduct()" *ngIf="edit_product">Update Product</button>
                   </div>
                     </form>
                 </div>
