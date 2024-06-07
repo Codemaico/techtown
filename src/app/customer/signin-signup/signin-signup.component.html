@@ -6,11 +6,7 @@
         <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp()">
           <div class="form-group">
             <label>Name</label>
-            <input
-              type="text"
-              class="form-control"
-              formControlName="name"
-            />
+            <input type="text" class="form-control" formControlName="name" />
           </div>
           <div class="form-group">
             <label>Mobile Number</label>
@@ -22,11 +18,7 @@
           </div>
           <div class="form-group">
             <label>Enter Your Age</label>
-            <input
-              type="number"
-              class="form-control"
-              formControlName="age"
-            />
+            <input type="number" class="form-control" formControlName="age" />
           </div>
           <div class="form-group">
             <label>Enter Your DOB</label>
@@ -104,11 +96,7 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect2">Language</label>
-            <select
-              multiple
-              class="form-control"
-              formControlName="languages"
-            >
+            <select multiple class="form-control" formControlName="languages">
               <option>English</option>
               <option>French</option>
               <option>Arabic</option>
@@ -123,9 +111,7 @@
                 formControlName="gender"
                 value="Male"
               />
-              <label for="inlineRadio1" class="form-check-label"
-                >Male</label
-              >
+              <label for="inlineRadio1" class="form-check-label">Male</label>
             </div>
             <div class="form-check form-check-inline">
               <input
@@ -134,9 +120,7 @@
                 formControlName="gender"
                 value="Female"
               />
-              <label for="inlineRadio2" class="form-check-label"
-                >Female</label
-              >
+              <label for="inlineRadio2" class="form-check-label">Female</label>
             </div>
             <div class="form-check form-check-inline">
               <input
@@ -150,9 +134,7 @@
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1"
-              >Something about you</label
-            >
+            <label for="exampleFormControlTextarea1">Something about you</label>
             <textarea
               class="form-control"
               rows="3"
@@ -173,12 +155,12 @@
               <input
                 type="checkbox"
                 class="form-check-input"
-                formControlName="agreeTC"/>
-              
-              <label for="gridCheck" class="form-check-label" >
-               Terms and Conditions
-            </label>
-              
+                formControlName="agreeTC"
+              />
+
+              <label for="gridCheck" class="form-check-label">
+                Terms and Conditions
+              </label>
             </div>
           </div>
           <div class="form-group">
@@ -195,8 +177,9 @@
         </form>
 
         <!-----------Reactive Login Form-->
-        <p class="sim-pointer" routerLink="/sign-in">
-          Already have an account Click here to login
+        <p class="sim-pointer">
+          Already have an account
+          <a routerLink="/sign-in">Click here to login</a>
         </p>
       </div>
       <div class="col-md-6 offset-md-3" *ngIf="!regForm">
@@ -208,7 +191,7 @@
           novalidate
         >
           <div class="form-group">
-            <label >Email</label>
+            <label>Email</label>
             <input
               type="email"
               class="form-control"
@@ -220,7 +203,7 @@
             />
           </div>
           <div class="form-group">
-            <label >Password</label>
+            <label>Password</label>
             <input
               type="password"
               class="form-control"
@@ -235,8 +218,9 @@
             <button class="btn btn-primary">Login</button>
           </div>
         </form>
-        <p class="sim-pointer" routerLink="/sign-up">
-          Don't have an account <a>Click here to Register</a> 
+        <p class="sim-pointer">
+          Don't have an account
+          <a routerLink="/sign-up">Click here to Register</a>
         </p>
       </div>
     </div>
