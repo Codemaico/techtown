@@ -112,7 +112,7 @@ export class UserProfileComponent implements OnInit {
         city: this.user_update_data.city,
         state: this.user_update_data.state,
         zipCode: this.user_update_data.zipCode,
-        name: this.user_update_data.name
+       
       },
       languages: this.user_update_data.languages,
       gender: this.user_update_data.gender,

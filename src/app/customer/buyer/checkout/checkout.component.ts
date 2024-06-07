@@ -28,24 +28,36 @@ export class CheckoutComponent implements OnInit  {
 
 
   ngOnInit(): void {
-    this.customerService.currentProduct.subscribe(product=>this.single_product_id = product) ;  
+    this.customerService.currentProduct.subscribe(product => {
+      this.single_product_id = product;
+      if (this.single_product_id) {
+        this.productDetail(this.single_product_id);
+      }
+    });  
     this.user_id = sessionStorage.getItem('user_session_id');
-    this.productDetail(this.single_product_id);
-    this.userAddress(this.user_id);
+    if (this.user_id) {
+      this.userAddress(this.user_id);
+    }
   }
   
-
-  productDetail(single_product_id:any){
+  productDetail(single_product_id: any) {
+    // Check if single_product_id is defined before making the API request
+    if (!single_product_id) {
+      console.log("Single product ID is undefined.");
+      return;
+    }
+    
     this.customerService.individualProduct(single_product_id).subscribe({
       next: (data: any) => {
         this.individual_product = data;
-        console.warn("My single product", this.individual_product);
+        console.log("Individual Product Data:", this.individual_product); // Log the individual_product
       },
       error: (error) => {
-        console.error("My error:", error);
+        console.error("Product detail error:", error);
       },
-    })
+    });
   }
+  
 
   userAddress(id:any){
     this.customerService.userDetail(id).subscribe({
@@ -76,7 +88,7 @@ export class CheckoutComponent implements OnInit  {
       },
       deliveryAddress:{
         id:0,
-        name:this.user_address.name,
+        
         addLine1:this.user_address.addLine1,
         addLine2:this.user_address.addLine2,
         city:this.user_address.city,

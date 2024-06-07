@@ -7,7 +7,7 @@
         }
         .card-body{
             .product-desc{
-                height: 9rem;
+                height: 7rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
@@ -18,4 +18,15 @@
             }
         }
     }
+}
+
+.btn-warning{
+    background:#212529;
+    border-color: #212529;
+    color: #fff;
+}
+.btn-warning:hover{
+    background:#99cc00;
+    border-color: #99cc00;
+    color: #212529;
 }

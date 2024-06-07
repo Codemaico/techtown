@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <img src="{{individual_product.uploadPhoto}}"
-                        class="card-img-top"  alt="{{individual_product.name}}" >
+                        class="card-img-top"  >
                     </div>
                     <div class="col-md-8">
                         <h4 class="text-bold card-title">{{individual_product.name}}</h4><br>
@@ -31,6 +31,7 @@
                 </div>
 
             </div>
+           
         </div>
     </div>
     <div class="col-md-4">
@@ -38,12 +39,12 @@
             <div class="card-header">
                 Address Detail
             </div>
-            <div class="card-body">
-                <h5 class="card-title text-bold">Id : {{user_address.name}}"</h5>
-                <p class="card-text">{{user_address.addLine1}}, {{user_address.addLine2}}</p>
-                <p class="card-text">{{user_address.city}}, {{user_address.state}}</p>
-                <p class="card-text">Postal Code: {{user_address.zipCode}}</p>
-                <p class="card-text">Contact Number: {{user_contact_no}}</p>
+            <div class="card-body address-detail" *ngIf="user_address">
+  <h5 class="card-title text-bold">Id: {{ user_address.id }}</h5>
+  <p class="card-text">{{ user_address.addLine1 }}, {{ user_address.addLine2 }}</p>
+  <p class="card-text">{{ user_address.city }}, {{ user_address.state }}</p>
+  <p class="card-text">Postal Code: {{ user_address.zipCode }}</p>
+  <p class="card-text">Contact Number: {{ user_contact_no }}</p>
                 <a (click)="placeOrder()" class="btn btn-primary">Book Here</a>
                 <div class="alert alert-info" role="alert">
                     <strong>Note: </strong>

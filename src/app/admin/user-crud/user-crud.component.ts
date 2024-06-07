@@ -99,7 +99,7 @@ export class UserCrudComponent implements OnInit {
         city: this.user_reg_data.city,
         state: this.user_reg_data.state,
         zipCode: this.user_reg_data.zipCode,
-        name:this.user_reg_data.name
+        
       },
       languages: this.user_reg_data.languages,
       gender: this.user_reg_data.gender,
@@ -181,7 +181,7 @@ export class UserCrudComponent implements OnInit {
         city: this.user_reg_data.city,
         state: this.user_reg_data.state,
         zipCode: this.user_reg_data.zipCode,
-        name:this.user_reg_data.name
+        
       },
       languages: this.user_reg_data.languages,
       gender: this.user_reg_data.gender,

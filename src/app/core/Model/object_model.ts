@@ -16,7 +16,7 @@ export class User {
 
 export class Address {
   id!: any;
-  name!: string;
+  
   addLine1!: string;
   addLine2!: string;
   city!: string;
@@ -31,7 +31,7 @@ export class Product {
   productDescription!: string;
   mrp!: number;
   dp!: number;
-  status!: boolean;
+  status!: string;
 }
 
 export class Order {
