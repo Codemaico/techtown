@@ -1,68 +1,59 @@
 {
-  "hash": "e42877b9",
-  "configHash": "dced83c1",
-  "lockfileHash": "33c539b4",
-  "browserHash": "b32e4aed",
+  "hash": "e4e59f94",
+  "configHash": "5c523845",
+  "lockfileHash": "9f5bd806",
+  "browserHash": "6fab46ff",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "237c0d4d",
+      "fileHash": "0889f0f7",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "069d305d",
+      "fileHash": "fb2388a9",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "a4d44ef3",
+      "fileHash": "b6e37faf",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "fea32092",
+      "fileHash": "85057ec2",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "83c6327d",
+      "fileHash": "2afe95fb",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "76a736d8",
+      "fileHash": "9c9806e7",
       "needsInterop": false
     },
     "@aws-amplify/ui-angular": {
       "src": "../../../../../node_modules/@aws-amplify/ui-angular/fesm2020/aws-amplify-ui-angular.mjs",
       "file": "@aws-amplify_ui-angular.js",
-      "fileHash": "00ecd1df",
-      "needsInterop": false
-    },
-    "aws-amplify": {
-      "src": "../../../../../node_modules/aws-amplify/dist/esm/index.mjs",
-      "file": "aws-amplify.js",
-      "fileHash": "d97050b7",
+      "fileHash": "49a7e427",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "9b0170ab",
+      "fileHash": "83f49654",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-TRBENUUY": {
-      "file": "chunk-TRBENUUY.js"
-    },
     "chunk-VLN5ZWAD": {
       "file": "chunk-VLN5ZWAD.js"
     },

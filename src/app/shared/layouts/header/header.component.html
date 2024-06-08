@@ -27,15 +27,15 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        
+
         <li class="nav-item" *ngIf="user_role == 'buyer'">
           <a class="nav-link" routerLink="/buyer-dashboard">Book</a>
         </li>
         <li class="nav-item" *ngIf="user_role == 'admin'">
-          <a class="nav-link" routerLink="/admin-dashboard">All Bookings</a>
+          <a class="nav-link" routerLink="/admin-dashboard">Dashboard</a>
         </li>
         <li class="nav-item" *ngIf="user_role == 'seller'">
-          <a class="nav-link" routerLink="/seller/product">Propetry</a>
+          <a class="nav-link" routerLink="/seller/product">Properties</a>
         </li>
         <li class="nav-item" *ngIf="user_role == 'admin'">
           <a class="nav-link" routerLink="/admin/product">All Properties</a>

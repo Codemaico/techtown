@@ -17,9 +17,7 @@
         "zipCode": 12345,
         "name": "Michael Tekie"
       },
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "gender": "Male",
       "aboutYou": "admin",
       "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.47.07.jpeg",
@@ -43,9 +41,7 @@
         "zipCode": 12345,
         "name": "Michael Tekie"
       },
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "gender": "Male",
       "aboutYou": "buyer",
       "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.47.07.jpeg",
@@ -69,9 +65,7 @@
         "zipCode": 12345,
         "name": "Michael Tekie"
       },
-      "languages": [
-        "English"
-      ],
+      "languages": ["English"],
       "gender": "Male",
       "aboutYou": "seller",
       "upLoadPhoto": "C:\\fakepath\\WhatsApp Image 2024-05-24 at 11.53.11.jpeg",
@@ -144,7 +138,5 @@
       "status": "inactive"
     }
   ],
-  "orders": [
-    
-  ]
+  "orders": []
 }

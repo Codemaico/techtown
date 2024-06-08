@@ -1,7 +1,7 @@
 <br />
 <div class="row">
   <div class="col-md-10">
-    <strong>All Product List</strong>
+    <strong>All Property List</strong>
   </div>
   <div class="col-md-2">
     <button
@@ -11,7 +11,7 @@
       data-bs-toggle="modal"
       data-bs-target="#addEditProductModal"
     >
-      Add Product
+      Add Property
     </button>
   </div>
 </div>
@@ -19,7 +19,7 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Product Name</th>
+      <th scope="col">Property Name</th>
       <th scope="col">Display Image</th>
       <th scope="col">MRP</th>
       <th scope="col">DP</th>
@@ -55,63 +55,96 @@
   </tbody>
 </table>
 
-<div class="modal fade" id="addEditProductModal" tabindex="-1" role="dialog"
-arial-label="addEditUserTitle" aria-hidden="true">
-<div class="modal-dialog modal-scrollable" role="document">
+<div
+  class="modal fade"
+  id="addEditProductModal"
+  tabindex="-1"
+  role="dialog"
+  arial-label="addEditUserTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-scrollable" role="document">
     <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">{{popup_header}}</h5>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+      <div class="modal-header">
+        <h5 class="modal-title">{{ popup_header }}</h5>
+        <button
+          type="button"
+          class="close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <form [formGroup]="addEditProductForm">
+              <div class="form-group">
+                <label for="productName">Property ID</label>
+                <input type="text" class="form-control" formControlName="id" />
+              </div>
+              <div class="form-group">
+                <label for="productName">Property Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="productImage">Property Image Url</label>
+                <input
+                  type="url"
+                  class="form-control"
+                  formControlName="uploadPhoto"
+                />
+              </div>
+              <div class="form-group">
+                <label for="productDescription">Property Description</label>
+                <textarea
+                  rows="3"
+                  class="form-control"
+                  formControlName="productDescription"
+                >
+                </textarea>
+              </div>
+              <div class="form-group">
+                <label for="productMRP">Property MRP</label>
+                <input type="text" class="form-control" formControlName="mrp" />
+              </div>
+              <div class="form-group">
+                <label for="productDP">Property DP</label>
+                <input type="text" class="form-control" formControlName="dp" />
+              </div>
+              <div class="form-group">
+                <label for="productName">Property Status</label>
+                <select class="form-control" formControlName="status">
+                  <option value="draft">Draft</option>
+                  <option value="published">Published</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button
+                  class="btn btn-primary"
+                  (click)="addNewProduct()"
+                  *ngIf="add_product"
+                >
+                  Add Property
+                </button>
+                <button
+                  class="btn btn-primary"
+                  (click)="updateProduct()"
+                  *ngIf="edit_product"
+                >
+                  Update Property
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <form [formGroup]="addEditProductForm">
-                      <div class="form-group">
-                        <label for="productName">Product ID</label>
-                        <input type="text" class="form-control" formControlName="id">
-                    </div>
-                        <div class="form-group">
-                            <label for="productName">Product Name</label>
-                            <input type="text" class="form-control" formControlName="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="productImage">Product Image Url</label>
-                            <input type="url" class="form-control" formControlName="uploadPhoto">
-                        </div>
-                        <div class="form-group">
-                            <label for="productDescription">Product Description</label>
-                            <textarea rows="3" class="form-control" formControlName="productDescription">
-                                
-                            </textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="productMRP">Product MRP</label>
-                          <input type="text" class="form-control" formControlName="mrp">
-                      </div>
-                      <div class="form-group">
-                        <label for="productDP">Product DP</label>
-                        <input type="text" class="form-control" formControlName="dp">
-                    </div>
-                    <div class="form-group">
-                      <label for="productName">Product Status</label>
-                      <select class="form-control" formControlName="status">
-                        <option value="draft">Draft</option>
-                        <option value="published">Published</option>
-                        <option value="inactive">Inactive</option>
-                      </select>
-                      
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn-primary" (click)="addNewProduct()" *ngIf="add_product">Add Product</button>
-                    <button class="btn btn-primary" (click)="updateProduct()" *ngIf="edit_product">Update Product</button>
-                  </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>

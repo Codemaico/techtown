@@ -16,7 +16,9 @@ export class User {
 
 export class Address {
   id!: any;
-  
+
+  name!: any;
+
   addLine1!: string;
   addLine2!: string;
   city!: string;
